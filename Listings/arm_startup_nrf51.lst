@@ -347,14 +347,21 @@ ARM Macro Assembler    Page 6
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M0 --apcs=interw
 ork --depend=.\objects\arm_startup_nrf51.d -o.\objects\arm_startup_nrf51.o -IE:
 \workspace\Keil\Nordic\Motion_Driver_nrf51\RTE -IE:\workspace\Keil\Nordic\Motio
-n_Driver_nrf51\RTE\nRF_Drivers\nRF51422_xxAC -IC:\Keil_v5\ARM\PACK\ARM\CMSIS\4.
-3.0\CMSIS\Include -IC:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPac
-k\8.0.3\Device\Include -IC:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_Drivers\3.
-0.1\hal -IC:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_Drivers\3.0.1\twi_master\
-incubated -IC:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_Drivers\3.0.1\twi_maste
-r\incubated\config --predefine="__UVISION_VERSION SETA 516" --predefine="_RTE_ 
-SETA 1" --predefine="NRF51 SETA 1" --list=.\listings\arm_startup_nrf51.lst RTE\
-Device\nRF51422_xxAC\arm_startup_nrf51.s
+n_Driver_nrf51\RTE\nRF_BLE\nRF51422_xxAC -IE:\workspace\Keil\Nordic\Motion_Driv
+er_nrf51\RTE\nRF_Drivers\nRF51422_xxAC -IE:\workspace\Keil\Nordic\Motion_Driver
+_nrf51\RTE\nRF_Libraries\nRF51422_xxAC -IC:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.0\CM
+SIS\Include -IC:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_BLE\3.0.1\common -IC:
+\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.0.3\Device\Include
+ -IC:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_Drivers\3.0.1\hal -IC:\Keil_v5\A
+RM\PACK\NordicSemiconductor\nRF_Drivers\3.0.1\twi_master\incubated -IC:\Keil_v5
+\ARM\PACK\NordicSemiconductor\nRF_Drivers\3.0.1\twi_master\incubated\config -IC
+:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_Libraries\3.0.1\timer -IC:\Keil_v5\A
+RM\PACK\NordicSemiconductor\nRF_Libraries\3.0.1\util -IC:\Keil_v5\ARM\PACK\Nord
+icSemiconductor\nRF_SoftDevice_Common\1.1.4\softdevice_handler -IC:\Keil_v5\ARM
+\PACK\NordicSemiconductor\nRF_SoftDevice_S110\8.0.2\headers --predefine="__UVIS
+ION_VERSION SETA 516" --predefine="_RTE_ SETA 1" --predefine="NRF51 SETA 1" --l
+ist=.\listings\arm_startup_nrf51.lst RTE\Device\nRF51422_xxAC\arm_startup_nrf51
+.s
 
 
 
