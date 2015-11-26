@@ -40,6 +40,8 @@ struct int_param_s {
     void *arg;
 #elif defined EMPL_TARGET_STM32F4
     void (*cb)(void);
+#elif defined MOTION_DRIVER_TARGET_NRF51
+    void (*cb)(void);
 #endif
 };
 
