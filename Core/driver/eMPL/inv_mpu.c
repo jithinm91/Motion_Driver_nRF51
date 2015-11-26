@@ -44,8 +44,8 @@
 #define i2c_read    mpu6050_i2c_read 
 #define delay_ms    nrf_delay_ms
 #define get_ms      app_timer_cnt_get
-#define log_i       MPL_LOGI
-#define log_e       MPL_LOGE
+#define log_i       printf
+#define log_e       printf
 #define min(a,b) ((a<b)?a:b)
 
 #elif defined EMPL_TARGET_STM32F4
