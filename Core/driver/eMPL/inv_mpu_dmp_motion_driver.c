@@ -32,7 +32,16 @@
  * delay_ms(unsigned long num_ms)
  * get_ms(unsigned long *count)
  */
-#if defined EMPL_TARGET_STM32F4
+#if defined MOTION_DRIVER_TARGET_NRF51
+
+#include "mpu9150.h"   
+#include "app_timer.h"
+   
+#define i2c_write   mpu6050_i2c_write
+#define i2c_read    mpu6050_i2c_read 
+#define delay_ms    nrf_delay_ms
+
+#elif defined EMPL_TARGET_STM32F4
 #include "i2c.h"   
 #include "main.h"
 #include "board-st_discovery.h"
