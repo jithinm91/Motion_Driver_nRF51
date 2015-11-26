@@ -54,6 +54,16 @@ bool mpu9150_register_read(uint8_t register_address, uint8_t *destination, uint8
 */
 bool mpu9150_verify_product_id(void);
 
+int mpu6050_i2c_write(unsigned char slave_addr,
+                     unsigned char reg_addr,
+                     unsigned char length,
+                     unsigned char const *data);
+
+int mpu6050_i2c_read(unsigned char slave_addr,
+                     unsigned char reg_addr,
+                     unsigned char length,
+                     unsigned char const *data);
+
 /**
  *@}
  **/

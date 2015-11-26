@@ -90,4 +90,26 @@ bool mpu9150_register_read(uint8_t register_address, uint8_t * destination, uint
     return transfer_succeeded;
 }
 
+int mpu6050_i2c_write(unsigned char slave_addr,
+                     unsigned char reg_addr,
+                     unsigned char length,
+                     unsigned char const *data)
+{
+    bool transfer_succeeded;
+    transfer_succeeded = twi_master_transfer(m_device_address, &reg_addr, 1, TWI_DONT_ISSUE_STOP);
+    transfer_succeeded = twi_master_transfer(m_device_address, (uint8_t*)data, length, TWI_DONT_ISSUE_STOP);
+    return transfer_succeeded;
+}
+
+int mpu6050_i2c_read(unsigned char slave_addr,
+                     unsigned char reg_addr,
+                     unsigned char length,
+                     unsigned char const *data)
+{
+    bool transfer_succeeded;
+    transfer_succeeded = twi_master_transfer(m_device_address, &reg_addr, 1, TWI_DONT_ISSUE_STOP);
+    transfer_succeeded = twi_master_transfer(m_device_address|TWI_READ_BIT, (uint8_t*)data, length, TWI_DONT_ISSUE_STOP);
+    return transfer_succeeded;
+}
+
 /*lint --flb "Leave library region" */
