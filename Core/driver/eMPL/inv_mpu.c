@@ -43,7 +43,7 @@
 #define i2c_write   mpu6050_i2c_write
 #define i2c_read    mpu6050_i2c_read 
 #define delay_ms    nrf_delay_ms
-#define get_ms      
+#define get_ms      app_timer_cnt_get
 #define log_i       MPL_LOGI
 #define log_e       MPL_LOGE
 #define min(a,b) ((a<b)?a:b)

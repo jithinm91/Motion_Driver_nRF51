@@ -53,16 +53,19 @@ Section Cross References
     inv_mpu.o(i.mpu_configure_fifo) refers to inv_mpu.o(.data) for .data
     inv_mpu.o(i.mpu_get_accel_fsr) refers to inv_mpu.o(.data) for .data
     inv_mpu.o(i.mpu_get_accel_reg) refers to mpu9150.o(i.mpu6050_i2c_read) for mpu6050_i2c_read
+    inv_mpu.o(i.mpu_get_accel_reg) refers to app_timer.o(i.app_timer_cnt_get) for app_timer_cnt_get
     inv_mpu.o(i.mpu_get_accel_reg) refers to inv_mpu.o(.data) for .data
     inv_mpu.o(i.mpu_get_accel_sens) refers to inv_mpu.o(.data) for .data
     inv_mpu.o(i.mpu_get_compass_fsr) refers to inv_mpu.o(.data) for .data
     inv_mpu.o(i.mpu_get_compass_reg) refers to mpu9150.o(i.mpu6050_i2c_read) for mpu6050_i2c_read
+    inv_mpu.o(i.mpu_get_compass_reg) refers to app_timer.o(i.app_timer_cnt_get) for app_timer_cnt_get
     inv_mpu.o(i.mpu_get_compass_reg) refers to inv_mpu.o(.data) for .data
     inv_mpu.o(i.mpu_get_compass_sample_rate) refers to inv_mpu.o(.data) for .data
     inv_mpu.o(i.mpu_get_dmp_state) refers to inv_mpu.o(.data) for .data
     inv_mpu.o(i.mpu_get_fifo_config) refers to inv_mpu.o(.data) for .data
     inv_mpu.o(i.mpu_get_gyro_fsr) refers to inv_mpu.o(.data) for .data
     inv_mpu.o(i.mpu_get_gyro_reg) refers to mpu9150.o(i.mpu6050_i2c_read) for mpu6050_i2c_read
+    inv_mpu.o(i.mpu_get_gyro_reg) refers to app_timer.o(i.app_timer_cnt_get) for app_timer_cnt_get
     inv_mpu.o(i.mpu_get_gyro_reg) refers to inv_mpu.o(.data) for .data
     inv_mpu.o(i.mpu_get_gyro_sens) refers to inv_mpu.o(.data) for .data
     inv_mpu.o(i.mpu_get_int_status) refers to mpu9150.o(i.mpu6050_i2c_read) for mpu6050_i2c_read
@@ -72,6 +75,7 @@ Section Cross References
     inv_mpu.o(i.mpu_get_power_state) refers to inv_mpu.o(.data) for .data
     inv_mpu.o(i.mpu_get_sample_rate) refers to inv_mpu.o(.data) for .data
     inv_mpu.o(i.mpu_get_temperature) refers to mpu9150.o(i.mpu6050_i2c_read) for mpu6050_i2c_read
+    inv_mpu.o(i.mpu_get_temperature) refers to app_timer.o(i.app_timer_cnt_get) for app_timer_cnt_get
     inv_mpu.o(i.mpu_get_temperature) refers to fflti.o(.text) for __aeabi_ui2f
     inv_mpu.o(i.mpu_get_temperature) refers to faddsub.o(x$fpl$fsub) for __aeabi_fsub
     inv_mpu.o(i.mpu_get_temperature) refers to fdiv.o(.text) for __aeabi_fdiv
@@ -121,6 +125,7 @@ Section Cross References
     inv_mpu.o(i.mpu_read_6500_gyro_bias) refers to inv_mpu.o(.data) for .data
     inv_mpu.o(i.mpu_read_fifo) refers to mpu9150.o(i.mpu6050_i2c_read) for mpu6050_i2c_read
     inv_mpu.o(i.mpu_read_fifo) refers to inv_mpu.o(i.mpu_reset_fifo) for mpu_reset_fifo
+    inv_mpu.o(i.mpu_read_fifo) refers to app_timer.o(i.app_timer_cnt_get) for app_timer_cnt_get
     inv_mpu.o(i.mpu_read_fifo) refers to aeabi_sdiv.o(.text) for __aeabi_uidivmod
     inv_mpu.o(i.mpu_read_fifo) refers to inv_mpu.o(.data) for .data
     inv_mpu.o(i.mpu_read_fifo_stream) refers to mpu9150.o(i.mpu6050_i2c_read) for mpu6050_i2c_read
@@ -766,21 +771,21 @@ Removing Unused input sections from the image.
     Removing inv_mpu.o(i.gyro_self_test), (204 bytes).
     Removing inv_mpu.o(i.mpu_configure_fifo), (92 bytes).
     Removing inv_mpu.o(i.mpu_get_accel_fsr), (64 bytes).
-    Removing inv_mpu.o(i.mpu_get_accel_reg), (76 bytes).
+    Removing inv_mpu.o(i.mpu_get_accel_reg), (88 bytes).
     Removing inv_mpu.o(i.mpu_get_accel_sens), (72 bytes).
     Removing inv_mpu.o(i.mpu_get_compass_fsr), (16 bytes).
-    Removing inv_mpu.o(i.mpu_get_compass_reg), (152 bytes).
+    Removing inv_mpu.o(i.mpu_get_compass_reg), (164 bytes).
     Removing inv_mpu.o(i.mpu_get_compass_sample_rate), (16 bytes).
     Removing inv_mpu.o(i.mpu_get_dmp_state), (16 bytes).
     Removing inv_mpu.o(i.mpu_get_fifo_config), (16 bytes).
     Removing inv_mpu.o(i.mpu_get_gyro_fsr), (56 bytes).
-    Removing inv_mpu.o(i.mpu_get_gyro_reg), (76 bytes).
+    Removing inv_mpu.o(i.mpu_get_gyro_reg), (88 bytes).
     Removing inv_mpu.o(i.mpu_get_gyro_sens), (68 bytes).
     Removing inv_mpu.o(i.mpu_get_int_status), (56 bytes).
     Removing inv_mpu.o(i.mpu_get_lpf), (60 bytes).
     Removing inv_mpu.o(i.mpu_get_power_state), (20 bytes).
     Removing inv_mpu.o(i.mpu_get_sample_rate), (32 bytes).
-    Removing inv_mpu.o(i.mpu_get_temperature), (116 bytes).
+    Removing inv_mpu.o(i.mpu_get_temperature), (128 bytes).
     Removing inv_mpu.o(i.mpu_init), (216 bytes).
     Removing inv_mpu.o(i.mpu_load_firmware), (156 bytes).
     Removing inv_mpu.o(i.mpu_lp_accel_mode), (168 bytes).
@@ -788,7 +793,7 @@ Removing Unused input sections from the image.
     Removing inv_mpu.o(i.mpu_read_6050_accel_bias), (104 bytes).
     Removing inv_mpu.o(i.mpu_read_6500_accel_bias), (104 bytes).
     Removing inv_mpu.o(i.mpu_read_6500_gyro_bias), (104 bytes).
-    Removing inv_mpu.o(i.mpu_read_fifo), (368 bytes).
+    Removing inv_mpu.o(i.mpu_read_fifo), (372 bytes).
     Removing inv_mpu.o(i.mpu_read_fifo_stream), (156 bytes).
     Removing inv_mpu.o(i.mpu_read_mem), (88 bytes).
     Removing inv_mpu.o(i.mpu_read_reg), (56 bytes).
@@ -904,7 +909,7 @@ Removing Unused input sections from the image.
     Removing inv_mpu.o(i.__ARM_common_switch8), (26 bytes).
     Removing inv_mpu_dmp_motion_driver.o(i.__ARM_common_ll_mulss), (48 bytes).
 
-154 unused section(s) (total 17421 bytes) removed from the image.
+154 unused section(s) (total 17473 bytes) removed from the image.
 
 ==============================================================================
 
