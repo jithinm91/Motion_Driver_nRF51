@@ -795,7 +795,7 @@ Removing Unused input sections from the image.
     Removing inv_mpu.o(i.mpu_get_power_state), (20 bytes).
     Removing inv_mpu.o(i.mpu_get_sample_rate), (32 bytes).
     Removing inv_mpu.o(i.mpu_get_temperature), (128 bytes).
-    Removing inv_mpu.o(i.mpu_init), (216 bytes).
+    Removing inv_mpu.o(i.mpu_init), (204 bytes).
     Removing inv_mpu.o(i.mpu_load_firmware), (156 bytes).
     Removing inv_mpu.o(i.mpu_lp_accel_mode), (168 bytes).
     Removing inv_mpu.o(i.mpu_lp_motion_interrupt), (184 bytes).
@@ -918,7 +918,7 @@ Removing Unused input sections from the image.
     Removing inv_mpu.o(i.__ARM_common_switch8), (26 bytes).
     Removing inv_mpu_dmp_motion_driver.o(i.__ARM_common_ll_mulss), (48 bytes).
 
-154 unused section(s) (total 17473 bytes) removed from the image.
+154 unused section(s) (total 17461 bytes) removed from the image.
 
 ==============================================================================
 

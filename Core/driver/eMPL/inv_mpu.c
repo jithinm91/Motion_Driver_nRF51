@@ -82,6 +82,7 @@ static inline int reg_int_cb(struct int_param_s *int_param)
 /* fabs is for doubles. fabsf is for floats. */
 #define fabs        fabsf
 #define min(a,b) ((a<b)?a:b)
+    
 #elif defined EMPL_TARGET_MSP430
 #include "msp430.h"
 #include "msp430_i2c.h"
@@ -783,7 +784,7 @@ int mpu_init(struct int_param_s *int_param)
     if (mpu_configure_fifo(0))
         return -1;
 
-#ifndef EMPL_TARGET_STM32F4    
+#ifndef MOTION_DRIVER_TARGET_NRF51    
     if (int_param)
         reg_int_cb(int_param);
 #endif
